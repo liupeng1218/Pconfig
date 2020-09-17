@@ -35,9 +35,12 @@ module.exports = {
       "extends": "plugin:vue/recommended"   // 最严谨，完全依照建议
     }
     */
-    'plugin:vue/recommended', 'eslint:recommended'
+    'plugin:vue/recommended',
+    'eslint:recommended',
+    'plugin:prettier/recommended' // 配合prettier使用，自动格式化，消除冲突
   ],
   rules: {
     // ESLint 附带有大量的规则。你可以在rules选项中设置，设置的规则将覆盖上面继承的默认规则。
+    'prettier/prettier': 'error'
   }
 }
